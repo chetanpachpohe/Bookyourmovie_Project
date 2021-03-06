@@ -1,9 +1,7 @@
 import math
 import re
 
-BASE_TICKET_PRICE = 200
-
-class Show:
+class Movie:
     global customers
     global booked_seats_number
 

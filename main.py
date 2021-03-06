@@ -1,4 +1,4 @@
-from book import Show
+from book import Movie
 global row
 global seats
 
@@ -8,7 +8,7 @@ while True:
     print("*** Welcome to Bookyourmovies ***")
     catlog=input("1. show seats\n2.Buy tickets\n3.view statistics\n4. show booked tickets customer info\n0.exit\n\n")
 
-    obj=Show()
+    obj=Movie()
     if catlog == "1":
         obj.show_seats(row,seats)
     elif catlog == "2":
