@@ -40,6 +40,10 @@ class Movie:
 
         if s_row <= row and s_col <= seats:
 
+            seat_no = int(str(s_row) + str(s_col))
+            if seat_no in booked_seats_number:
+                print("Sorry, Seat is already booked!")
+                return
             total_seats = row * seats
 
             if total_seats <= 60:
